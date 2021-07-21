@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 minimum-scale=1, maximum-scale=1"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merienda+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link rel="stylesheet" type="text/css" href="./weather-icons.css" />
+    <link rel="stylesheet" type="text/css" href="./weather-icons.min.css" />
+    <link rel="stylesheet" type="text/css" href="./weather-icons-wind.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./weather-icons-wind.min.css"
+    />
+
+    <link rel="shortcut icon" href="./New folder/1494258045-sunsunnyweatherspringforecastsummer_84343.ico" type="image/x-icon">  
+
+    <title>rainCheck</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo">
+        <h1>rain check</h1>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="search-div">
+        <div class="search">
+          <input
+            type="text"
+            name="city"
+            id="srch-text"
+            placeholder="Enter city name"
+            autocomplete="off"
+          />
+          <button type="button" name="search" id="search-button">
+            <img src="../New folder/search.svg" />
+          </button>
+        </div>
+      </div>
+      <p class="loc"></p>
+      <p class="date"></p>
+      <div class="weather-data">
+        <div class="weather-today">
+          <i></i>
+          <div class="top-line">
+            <div class="curtemp"></div>
+            <div class="desc"></div>
+          </div>
+          <div class="data">
+            <div class="temp-wrapper">
+              <div class="maxtemp-td"></div>
+              <div class="mintemp-td"></div>
+            </div>
+            <div class="feels-wrapper">
+              <p class="humid"></p>
+              <p class="feels"></p>
+            </div>
+          </div>
+        </div>
+        <p class="forecast">7 Day forecast</p>
+        <div class="weather-forecast">
+          <div class="future-weather">
+            <div class="date-info">
+              <p class="day"></p>
+              <p class="date"></p>
+            </div>
+            <div class="futur-wrap">
+              <div class="icon-info">
+                <div class="info">
+                  <p id="future-max"></p>
+                  <p id="future-min"></p>
+                </div>
+                <i class="f-icon"></i>
+              </div>
+              <p id="brief"></p>
+            </div>
+          </div>
+          <div class="future-weather">
+            <div class="date-info">
+              <p class="day"></p>
+              <p class="date"></p>
+            </div>
+            <div class="futur-wrap">
+              <div class="icon-info">
+                <div class="info">
+                  <p id="future-max"></p>
+                  <p id="future-min"></p>
+                </div>
+                <i class="f-icon"></i>
+              </div>
+              <p id="brief"></p>
+            </div>
+          </div>
+          <div class="future-weather">
+            <div class="date-info">
+              <p class="day"></p>
+              <p class="date"></p>
+            </div>
+            <div class="futur-wrap">
+              <div class="icon-info">
+                <div class="info">
+                  <p id="future-max"></p>
+                  <p id="future-min"></p>
+                </div>
+                <i class="f-icon"></i>
+              </div>
+              <p id="brief"></p>
+            </div>
+          </div>
+          <div class="future-weather">
+            <div class="date-info">
+              <p class="day"></p>
+              <p class="date"></p>
+            </div>
+            <div class="futur-wrap">
+              <div class="icon-info">
+                <div class="info">
+                  <p id="future-max"></p>
+                  <p id="future-min"></p>
+                </div>
+                <i class="f-icon"></i>
+              </div>
+              <p id="brief"></p>
+            </div>
+          </div>
+          <div class="future-weather">
+            <div class="date-info">
+              <p class="day"></p>
+              <p class="date"></p>
+            </div>
+            <div class="futur-wrap">
+              <div class="icon-info">
+                <div class="info">
+                  <p id="future-max"></p>
+                  <p id="future-min"></p>
+                </div>
+                <i class="f-icon"></i>
+              </div>
+              <p id="brief"></p>
+            </div>
+          </div>
+          <div class="future-weather">
+            <div class="date-info">
+              <p class="day"></p>
+              <p class="date"></p>
+            </div>
+            <div class="futur-wrap">
+              <div class="icon-info">
+                <div class="info">
+                  <p id="future-max"></p>
+                  <p id="future-min"></p>
+                </div>
+                <i class="f-icon"></i>
+              </div>
+              <p id="brief"></p>
+            </div>
+          </div>
+          <div class="future-weather">
+            <div class="date-info">
+              <p class="day"></p>
+              <p class="date"></p>
+            </div>
+            <div class="futur-wrap">
+              <div class="icon-info">
+                <div class="info">
+                  <p id="future-max"></p>
+                  <p id="future-min"></p>
+                </div>
+                <i class="f-icon"></i>
+              </div>
+              <p id="brief"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2>Loading....</h2>
+      <div class="blank">
+        
+        <div class="articles">
+          <div id="one">
+            <a class="one" target="_blank">
+              <img src="" />
+              <div class="one"></div>
+            </a>
+          </div>
+          <div id="two">
+            <a class="two" target="_blank">
+              <img src="" />
+              <div class="two"></div>
+            </a>
+          </div>
+          <div id="three">
+            <a class="three" target="_blank">
+              <img src="" />
+              <div class="three"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <span>made by Shrawan Baruah :P</span>
+      <!-- <div class="contact"> -->
+        <a href="https://github.com/CodeingersCat" target="_blank" class="git"><i class="fab fa-github"></i></a>
+        <a href="https://twitter.com/while_shrawan?s=09" target="_blank" class="tweet"><i class="fab fa-twitter-square" ></i></a>
+        <a href="mailto:shrawansb2000@gmail.com" target="_blank" class="tweet"><i class="fas fa-paper-plane" aria-hidden="true"></i></a>
+      <!-- </div> -->
+    </div>
+  </body>
+  <script type="module" src="./index.js"></script>
+  <script src="https://use.fontawesome.com/90f20a31e8.js"></script>
+</html>

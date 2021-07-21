@@ -1,0 +1,440 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #26a4e8;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  font-family: "Merienda One", cursive;
+  width: 100%;
+  min-height: 50px;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 0;
+}
+
+.logo {
+  cursor: pointer;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+.blank {
+  max-width: 800px;
+  margin: auto;
+  font-size: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+}
+
+h2{
+  max-width: 720px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.articles{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.one,
+.two,
+.three {
+  font-size: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5%;
+}
+
+a img{
+  border-radius: 52px;
+  width: 30%;
+  object-fit: cover;
+}
+
+a.one,
+a.two,
+a.three{
+  border-radius: 52px;
+  box-shadow: -11px 11px 22px #218dc8, 11px -11px 22px #2bbbff;
+}
+
+#one,
+#two,
+#three{
+  margin-top: 2%;
+  margin-bottom: 8%;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.main {
+  font-family: "Poppins", sans-serif;
+}
+
+.search-div {
+  width: 100%;
+  padding-bottom: 10%;
+  min-height: 50px;
+}
+
+@media screen and (min-width: 500px) {
+  .search-div{
+    padding-bottom: 2rem;
+  }
+
+  .one,
+  .two,
+  .three {
+  font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .header {
+    font-size: 2rem;
+  }
+
+  .logo{
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  .articles{
+    flex-direction: row;
+  }
+
+  #one,
+  #two,
+  #three{
+    width: 30%;
+  }
+  
+  a.one,
+  a.two,
+  a.three{
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  a img{
+    width: 100%;
+    padding: 5%;
+    object-fit: cover;
+}
+
+  .one,
+  .two,
+  .three{
+    font-size:1rem;
+  }
+
+}
+
+@media screen and (min-width: 900px) {
+  .blank{
+    padding: 0;
+  }
+
+  .search-div{
+    padding-bottom: 3.5rem;
+  }
+
+  h2{
+    max-width: 800px;
+    margin: auto;
+  }
+}
+
+.search {
+  text-align: center;
+  padding: 2%;
+  width: 90%;
+  max-width: 800px;
+  height: 5vh;
+  min-height: 50px;
+  margin: auto;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 52px;
+  box-shadow: -11px 11px 22px #218dc8, 11px -11px 22px #2bbbff;
+}
+
+.search input {
+  padding-left: 2%;
+  outline: none;
+  border: none;
+  width: 80%;
+  font-size: 1rem;
+  background-color: transparent;
+}
+
+#search-button {
+  outline: none;
+  border: none;
+  width: 25%;
+  background-color: #26a4e8;
+  padding: 1%;
+  cursor: pointer;
+}
+
+.search button img {
+  bottom: 0;
+  height: 1.6rem;
+}
+
+.weather-data {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 800px;
+  margin: auto;
+}
+
+p {
+  width: 90%;
+  margin: auto;
+  max-width: 800px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3rem;
+  padding-bottom: 3%;
+}
+
+.date {
+  padding-bottom: 3%;
+  font-size: 1rem;
+}
+
+.weather-today {
+  height: 40vh;
+  width: 100%;
+  min-height: 252px;
+  border-radius: 52px;
+  box-shadow: -11px 11px 22px #218dc8, 11px -11px 22px #2bbbff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+i {
+  width: 100%;
+  height: 50%;
+  font-size: 6rem;
+  text-align: center;
+  padding-top: 10%;
+}
+
+.top-line {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.data {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.desc,
+.curtemp {
+  width: 50%;
+  text-align: center;
+  font-size: 1.8rem;
+  font-family: "Poppins", sans-serif;
+  padding-bottom: 2%;
+}
+
+.feels,
+.humid {
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  padding-bottom: 2%;
+}
+
+.maxtemp-td {
+  text-align: center;
+  width: 100%;
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+  padding-bottom: 2%;
+}
+
+.mintemp-td {
+  width: 100%;
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.forecast {
+  padding-top: 10%;
+}
+
+.weather-forecast {
+  display: flex;
+  flex-direction: column;
+  background-color: #26a4e8;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 3%;
+  outline: none;
+}
+
+@media screen and (min-width: 500px) {
+  .weather-forecast{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .weather-forecast>*{
+    flex: 1 1 300px;
+  }
+
+}
+
+@media screen and (min-width: 705px){
+  p.forecast{
+    padding-top: 4rem;
+  }
+
+  p.loc{
+    padding-bottom: 2%;
+  }
+
+  p.date{
+    padding-bottom: 2%;
+  }
+
+  .logo{
+    padding-bottom: 3%;
+    padding-top: 3%;
+  }
+}
+
+.future-weather {
+  height: 12vh;
+  width: 100%;
+  margin-bottom: 10%;
+  min-height: 93px;
+  display: flex;
+  border-radius: 32px;
+  box-shadow: -11px 11px 22px #218dc8, 11px -11px 22px #2bbbff;
+}
+
+.futur-wrap {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#future-max,
+#future-min,
+#brief {
+  font-size: 0.9rem;
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (max-width: 321px) {
+  #future-max,
+  #future-min{
+    font-size: 0.8rem;
+  }
+}
+
+.date-info {
+  width: 40%;
+  display: flex;
+  text-align: center;
+  padding-right: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.icon-info {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  align-self: flex-start;
+  padding-left: 10%;
+}
+
+#future-max,
+#future-min {
+  width: 100%;
+}
+
+.f-icon {
+  padding-top: 5%;
+  width: auto;
+  font-size: 2rem;
+}
+
+.footer{
+  font-family: "Merienda One", cursive;
+  text-align: center;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center ;
+  width: 100%;
+  padding-top: 10%;
+  padding-right: 10%;
+  padding-left: 10%;
+  padding-bottom: 4%;
+  margin-top: auto;
+}
+
+.contact{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+i{
+  font-size: 1.8rem;
+  font-family: 'FontAwesome';
+  text-decoration: none;
+  font-style: normal; 
+}
+
+.git, .tweet{
+  margin-left: 4%;
+}
